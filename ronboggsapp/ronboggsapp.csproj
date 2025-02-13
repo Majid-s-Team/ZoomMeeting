@@ -1,0 +1,783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC57CEEA-E2AC-4A24-8B79-40FA4EA7CCF3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ronboggsapp</RootNamespace>
+    <AssemblyName>ronboggsapp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44373</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.5.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.26.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.26.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.3.8\lib\net462\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit, Version=4.9.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeKit.4.9.0\lib\net47\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=9.2.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.9.2.0\lib\net462\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.15.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.15.0\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.Authenticators, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.Authenticators.1.1.1\lib\netstandard2.0\RestSharp.Authenticators.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.0\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Formats.Asn1, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Formats.Asn1.8.0.1\lib\net462\System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.0\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.0\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.0\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Pkcs, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Pkcs.8.0.0\lib\net462\System.Security.Cryptography.Pkcs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.8.0.4\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.0\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="ZstdSharp, Version=0.8.0.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZstdSharp.Port.0.8.0\lib\net462\ZstdSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\UserAccountsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContactFormModel.cs" />
+    <Compile Include="Models\EmailService.cs" />
+    <Compile Include="Models\IpInfo.cs" />
+    <Compile Include="Models\SQL_Connection_Server.cs" />
+    <Compile Include="Models\MYSQL_Connection_Server.cs" />
+    <Compile Include="Models\SMTP_PROTOCOL.cs" />
+    <Compile Include="Models\EnvirontmentVariable.cs" />
+    <Compile Include="Models\TableName.cs" />
+    <Compile Include="Models\ZoomConfiguration.cs" />
+    <Compile Include="Models\ZoomMeetingLink.cs" />
+    <Compile Include="Models\ZoomMeetingResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include=".gitignore" />
+    <Content Include="souces\dist\css\ajax-loader.gif" />
+    <Content Include="souces\dist\css\app.css" />
+    <Content Include="souces\dist\fonts\roboto\LICENSE.txt" />
+    <Content Include="souces\dist\icons\readmail.png" />
+    <Content Include="souces\dist\icons\unreadmail.png" />
+    <Content Include="souces\dist\images\bg-login-page.svg" />
+    <Content Include="souces\dist\images\error-illustration.svg" />
+    <Content Include="souces\dist\images\food-beverage-1.jpg" />
+    <Content Include="souces\dist\images\food-beverage-10.jpg" />
+    <Content Include="souces\dist\images\food-beverage-11.jpg" />
+    <Content Include="souces\dist\images\food-beverage-12.jpg" />
+    <Content Include="souces\dist\images\food-beverage-13.jpg" />
+    <Content Include="souces\dist\images\food-beverage-14.jpg" />
+    <Content Include="souces\dist\images\food-beverage-15.jpg" />
+    <Content Include="souces\dist\images\food-beverage-16.jpg" />
+    <Content Include="souces\dist\images\food-beverage-17.jpg" />
+    <Content Include="souces\dist\images\food-beverage-18.jpg" />
+    <Content Include="souces\dist\images\food-beverage-19.jpg" />
+    <Content Include="souces\dist\images\food-beverage-2.jpg" />
+    <Content Include="souces\dist\images\food-beverage-3.jpg" />
+    <Content Include="souces\dist\images\food-beverage-4.jpg" />
+    <Content Include="souces\dist\images\food-beverage-5.jpg" />
+    <Content Include="souces\dist\images\food-beverage-6.jpg" />
+    <Content Include="souces\dist\images\food-beverage-7.jpg" />
+    <Content Include="souces\dist\images\food-beverage-8.jpg" />
+    <Content Include="souces\dist\images\food-beverage-9.jpg" />
+    <Content Include="souces\dist\images\illustration.svg" />
+    <Content Include="souces\dist\images\logo.svg" />
+    <Content Include="souces\dist\images\map-marker-region.png" />
+    <Content Include="souces\dist\images\map-marker.png" />
+    <Content Include="souces\dist\images\placeholders\200x200.jpg" />
+    <Content Include="souces\dist\images\placeholders\800x800.jpg" />
+    <Content Include="souces\dist\images\preview-1.jpg" />
+    <Content Include="souces\dist\images\preview-10.jpg" />
+    <Content Include="souces\dist\images\preview-11.jpg" />
+    <Content Include="souces\dist\images\preview-12.jpg" />
+    <Content Include="souces\dist\images\preview-13.jpg" />
+    <Content Include="souces\dist\images\preview-14.jpg" />
+    <Content Include="souces\dist\images\preview-15.jpg" />
+    <Content Include="souces\dist\images\preview-16.jpg" />
+    <Content Include="souces\dist\images\preview-17.jpg" />
+    <Content Include="souces\dist\images\preview-18.jpg" />
+    <Content Include="souces\dist\images\preview-19.jpg" />
+    <Content Include="souces\dist\images\preview-2.jpg" />
+    <Content Include="souces\dist\images\preview-3.jpg" />
+    <Content Include="souces\dist\images\preview-4.jpg" />
+    <Content Include="souces\dist\images\preview-5.jpg" />
+    <Content Include="souces\dist\images\preview-6.jpg" />
+    <Content Include="souces\dist\images\preview-7.jpg" />
+    <Content Include="souces\dist\images\preview-8.jpg" />
+    <Content Include="souces\dist\images\preview-9.jpg" />
+    <Content Include="souces\dist\images\profile-1.jpg" />
+    <Content Include="souces\dist\images\profile-10.jpg" />
+    <Content Include="souces\dist\images\profile-11.jpg" />
+    <Content Include="souces\dist\images\profile-12.jpg" />
+    <Content Include="souces\dist\images\profile-13.jpg" />
+    <Content Include="souces\dist\images\profile-14.jpg" />
+    <Content Include="souces\dist\images\profile-15.jpg" />
+    <Content Include="souces\dist\images\profile-16.jpg" />
+    <Content Include="souces\dist\images\profile-17.jpg" />
+    <Content Include="souces\dist\images\profile-18.jpg" />
+    <Content Include="souces\dist\images\profile-19.jpg" />
+    <Content Include="souces\dist\images\profile-2.jpg" />
+    <Content Include="souces\dist\images\profile-3.jpg" />
+    <Content Include="souces\dist\images\profile-4.jpg" />
+    <Content Include="souces\dist\images\profile-5.jpg" />
+    <Content Include="souces\dist\images\profile-6.jpg" />
+    <Content Include="souces\dist\images\profile-7.jpg" />
+    <Content Include="souces\dist\images\profile-8.jpg" />
+    <Content Include="souces\dist\images\profile-9.jpg" />
+    <Content Include="souces\dist\js\app.js" />
+    <Content Include="souces\dist\js\app.js.LICENSE.txt" />
+    <Content Include="souces\src\fonts\roboto\LICENSE.txt" />
+    <Content Include="souces\src\images\bg-login-page.svg" />
+    <Content Include="souces\src\images\error-illustration.svg" />
+    <Content Include="souces\src\images\food-beverage-1.jpg" />
+    <Content Include="souces\src\images\food-beverage-10.jpg" />
+    <Content Include="souces\src\images\food-beverage-11.jpg" />
+    <Content Include="souces\src\images\food-beverage-12.jpg" />
+    <Content Include="souces\src\images\food-beverage-13.jpg" />
+    <Content Include="souces\src\images\food-beverage-14.jpg" />
+    <Content Include="souces\src\images\food-beverage-15.jpg" />
+    <Content Include="souces\src\images\food-beverage-16.jpg" />
+    <Content Include="souces\src\images\food-beverage-17.jpg" />
+    <Content Include="souces\src\images\food-beverage-18.jpg" />
+    <Content Include="souces\src\images\food-beverage-19.jpg" />
+    <Content Include="souces\src\images\food-beverage-2.jpg" />
+    <Content Include="souces\src\images\food-beverage-3.jpg" />
+    <Content Include="souces\src\images\food-beverage-4.jpg" />
+    <Content Include="souces\src\images\food-beverage-5.jpg" />
+    <Content Include="souces\src\images\food-beverage-6.jpg" />
+    <Content Include="souces\src\images\food-beverage-7.jpg" />
+    <Content Include="souces\src\images\food-beverage-8.jpg" />
+    <Content Include="souces\src\images\food-beverage-9.jpg" />
+    <Content Include="souces\src\images\illustration.svg" />
+    <Content Include="souces\src\images\logo.svg" />
+    <Content Include="souces\src\images\map-marker-region.png" />
+    <Content Include="souces\src\images\map-marker.png" />
+    <Content Include="souces\src\images\placeholders\200x200.jpg" />
+    <Content Include="souces\src\images\placeholders\800x800.jpg" />
+    <Content Include="souces\src\images\preview-1.jpg" />
+    <Content Include="souces\src\images\preview-10.jpg" />
+    <Content Include="souces\src\images\preview-11.jpg" />
+    <Content Include="souces\src\images\preview-12.jpg" />
+    <Content Include="souces\src\images\preview-13.jpg" />
+    <Content Include="souces\src\images\preview-14.jpg" />
+    <Content Include="souces\src\images\preview-15.jpg" />
+    <Content Include="souces\src\images\preview-16.jpg" />
+    <Content Include="souces\src\images\preview-17.jpg" />
+    <Content Include="souces\src\images\preview-18.jpg" />
+    <Content Include="souces\src\images\preview-19.jpg" />
+    <Content Include="souces\src\images\preview-2.jpg" />
+    <Content Include="souces\src\images\preview-3.jpg" />
+    <Content Include="souces\src\images\preview-4.jpg" />
+    <Content Include="souces\src\images\preview-5.jpg" />
+    <Content Include="souces\src\images\preview-6.jpg" />
+    <Content Include="souces\src\images\preview-7.jpg" />
+    <Content Include="souces\src\images\preview-8.jpg" />
+    <Content Include="souces\src\images\preview-9.jpg" />
+    <Content Include="souces\src\images\profile-1.jpg" />
+    <Content Include="souces\src\images\profile-10.jpg" />
+    <Content Include="souces\src\images\profile-11.jpg" />
+    <Content Include="souces\src\images\profile-12.jpg" />
+    <Content Include="souces\src\images\profile-13.jpg" />
+    <Content Include="souces\src\images\profile-14.jpg" />
+    <Content Include="souces\src\images\profile-15.jpg" />
+    <Content Include="souces\src\images\profile-16.jpg" />
+    <Content Include="souces\src\images\profile-17.jpg" />
+    <Content Include="souces\src\images\profile-18.jpg" />
+    <Content Include="souces\src\images\profile-19.jpg" />
+    <Content Include="souces\src\images\profile-2.jpg" />
+    <Content Include="souces\src\images\profile-3.jpg" />
+    <Content Include="souces\src\images\profile-4.jpg" />
+    <Content Include="souces\src\images\profile-5.jpg" />
+    <Content Include="souces\src\images\profile-6.jpg" />
+    <Content Include="souces\src\images\profile-7.jpg" />
+    <Content Include="souces\src\images\profile-8.jpg" />
+    <Content Include="souces\src\images\profile-9.jpg" />
+    <Content Include="souces\src\js\accordion.js" />
+    <Content Include="souces\src\js\app.js" />
+    <Content Include="souces\src\js\bootstrap.js" />
+    <Content Include="souces\src\js\chart.js" />
+    <Content Include="souces\src\js\chat.js" />
+    <Content Include="souces\src\js\copy-code.js" />
+    <Content Include="souces\src\js\datatable.js" />
+    <Content Include="souces\src\js\datepicker.js" />
+    <Content Include="souces\src\js\dropdown.js" />
+    <Content Include="souces\src\js\dropzone.js" />
+    <Content Include="souces\src\js\feather.js" />
+    <Content Include="souces\src\js\helper.js" />
+    <Content Include="souces\src\js\highlight.js" />
+    <Content Include="souces\src\js\image-zoom.js" />
+    <Content Include="souces\src\js\maps.js" />
+    <Content Include="souces\src\js\mobile-menu.js" />
+    <Content Include="souces\src\js\modal.js" />
+    <Content Include="souces\src\js\search.js" />
+    <Content Include="souces\src\js\select2.js" />
+    <Content Include="souces\src\js\show-code.js" />
+    <Content Include="souces\src\js\show-modal.js" />
+    <Content Include="souces\src\js\side-menu-tooltip.js" />
+    <Content Include="souces\src\js\side-menu.js" />
+    <Content Include="souces\src\js\slick.js" />
+    <Content Include="souces\src\js\summernote.js" />
+    <Content Include="souces\src\js\svg-loader.js" />
+    <Content Include="souces\src\js\tab.js" />
+    <Content Include="souces\src\js\toast.js" />
+    <Content Include="souces\src\js\tooltipster.js" />
+    <Content Include="souces\src\js\validation.js" />
+    <Content Include="sourcecode_home.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="wp-content\plugins\js_composer\assets\css\js_composer.min3912.css" />
+    <Content Include="wp-content\plugins\js_composer\assets\fonts\vc_grid\vc_grid_v157a1.svg" />
+    <Content Include="wp-content\plugins\js_composer\assets\fonts\vc_icons_v3\fonts\vcpb-plugin-iconscd4b.svg" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\flickr.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\address-book.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\alarm-clock.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\anchor.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\application-image.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\arrow.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\asterisk.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\auction-hammer.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\balloon-buzz.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\balloon-facebook.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\balloon-twitter.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\balloon.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\battery-full.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\binocular.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\blue-document-excel.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\blue-document-image.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\blue-document-music.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\blue-document-office.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\blue-document-pdf.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\blue-document-powerpoint.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\blue-document-word.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\bookmark.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\camcorder.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\camera.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\chart-pie.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\chart.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\clock.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\control.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\fire.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\heart.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\mail.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\plus-shield.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\icons\video.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\spinner.gif" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\toggle_close.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\images\toggle_open.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\js\dist\js_composer_front.min3912.js" />
+    <Content Include="wp-content\plugins\js_composer\assets\js\vendors\woocommerce-add-to-cart3912.js" />
+    <Content Include="wp-content\plugins\js_composer\assets\vc\alert.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\vc\exclamation.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\vc\info.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\vc\remove.png" />
+    <Content Include="wp-content\plugins\js_composer\assets\vc\tick.png" />
+    <Content Include="wp-content\plugins\wappointment\dist\9c96e0ed7093c095fd33870329282962.png" />
+    <Content Include="wp-content\plugins\wappointment\dist\appFawesome.4e2ad45bee468cf2e01a.bundle.js" />
+    <Content Include="wp-content\plugins\wappointment\dist\FieldsGenerated.7cb15031d6d09da2a3ad.bundle.js" />
+    <Content Include="wp-content\plugins\wappointment\dist\front.57477adb0bd663f5b128.bundled047.js" />
+    <Content Include="wp-content\plugins\wappointment\dist\group-bookingform-group-viewingappointment.537ed95561ac3b785fae.bundle.js" />
+    <Content Include="wp-content\plugins\wappointment\dist\group-bookingform.5404fcf7b470c313abd7.bundle.js" />
+    <Content Include="wp-content\plugins\wappointment\dist\style-flag.216cbd8bd046bf27d58a.bundle.js" />
+    <Content Include="wp-content\plugins\wappointment\dist\vendors-appFawesome-group-addons-group-settings.ec572a4e672a6afb1a95.bundle.js" />
+    <Content Include="wp-content\plugins\wappointment\dist\vendors-appFawesome.da7bfb1947fa4220ddbf.bundle.js" />
+    <Content Include="wp-content\plugins\wappointment\dist\vendors-group-addons-group-bookingform-group-calendar-group-settings.e1b6846f51b17a373f16.bundle.js" />
+    <Content Include="wp-content\plugins\wappointment\dist\vendors-group-bookingform-group-viewingappointment.fc4462bd18462511fca3.bundle.js" />
+    <Content Include="wp-content\plugins\wappointment\dist\vendors-VueTelInput.963bd74bb64bfadac67a.bundle.js" />
+    <Content Include="wp-content\plugins\wappointment\dist\VueTelInput.db54d74eedf67e3f5424.bundle.js" />
+    <Content Include="wp-content\plugins\wappointment\dist\WapImage.edd74ffda296850a901b.bundle.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\client\blocks\wc-blocks7a01.css" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\frontend\add-to-cart.minceb1.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\frontend\order-attribution.minceb1.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\frontend\woocommerce.minceb1.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\jquery-blockui\jquery.blockUI.min6fb9.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\js-cookie\js.cookie.mine74b.js" />
+    <Content Include="wp-content\plugins\woocommerce\assets\js\sourcebuster\sourcebuster.minceb1.js" />
+    <Content Include="wp-content\plugins\wpforms\assets\css\frontend\modern\wpforms-full.min8162.css" />
+    <Content Include="wp-content\plugins\wpforms\assets\images\submit-spin.svg" />
+    <Content Include="wp-content\plugins\wpforms\assets\js\frontend\wpforms-modern.min8162.js" />
+    <Content Include="wp-content\plugins\wpforms\assets\js\frontend\wpforms.min8162.js" />
+    <Content Include="wp-content\plugins\wpforms\assets\js\share\utils.min8162.js" />
+    <Content Include="wp-content\plugins\wpforms\assets\lib\jquery.inputmask.mind6ea.js" />
+    <Content Include="wp-content\plugins\wpforms\assets\lib\jquery.validate.min5095.js" />
+    <Content Include="wp-content\plugins\wpforms\assets\lib\mailcheck.mincfa9.js" />
+    <Content Include="wp-content\plugins\wpforms\assets\lib\punycode.min8a54.js" />
+    <Content Include="wp-content\plugins\wpforms\assets\pro\css\fields\img\flags%402xc4ca.html" />
+    <Content Include="wp-content\plugins\wpforms\assets\pro\css\fields\img\flagsc4ca.html" />
+    <Content Include="wp-content\plugins\wpforms\assets\pro\css\fields\img\globe%402x.html" />
+    <Content Include="wp-content\plugins\wpforms\assets\pro\css\fields\img\globe.html" />
+    <Content Include="wp-content\plugins\wpforms\assets\pro\css\fields\layout.min8162.css" />
+    <Content Include="wp-content\plugins\wpforms\assets\pro\css\fields\phone\intl-tel-input.mind11f.css" />
+    <Content Include="wp-content\plugins\wpforms\assets\pro\css\frontend\modern\wpforms-full.min8162.css" />
+    <Content Include="wp-content\plugins\wpforms\assets\pro\images\times-solid-white.svg" />
+    <Content Include="wp-content\plugins\wpforms\assets\pro\images\vendor\intl-tel-input-flags%402xc4ca.png" />
+    <Content Include="wp-content\plugins\wpforms\assets\pro\images\vendor\intl-tel-input-flagsc4ca.png" />
+    <Content Include="wp-content\plugins\wpforms\assets\pro\images\vendor\intl-tel-input-globe%402xc4ca.png" />
+    <Content Include="wp-content\plugins\wpforms\assets\pro\images\vendor\intl-tel-input-globec4ca.png" />
+    <Content Include="wp-content\plugins\wpforms\assets\pro\lib\intl-tel-input\module.intl-tel-input.mind11f.js" />
+    <Content Include="wp-content\themes\woodmart-child\styleca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\bootstrap-light.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\base.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\el-info-box-style-shadow-and-bg-hover.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\el-info-box.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\el-social-icons.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\el-testimonial.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\footer-base.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\header-base.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\header-el-base.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\header-el-mobile-nav-dropdown.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\int-wpb-base-deprecated.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\int-wpb-base.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\lib-swiper-arrows.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\lib-swiper.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\mod-star-rating.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\mod-tools.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\opt-scrolltotop.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\opt-widget-collapse.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\page-title.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\wd-search-form.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\woo-el-track-order.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\woo-gutenberg.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\woo-mod-block-notices.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\woocommerce-base.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\css\parts\wp-gutenberg.minca3f.css" />
+    <Content Include="wp-content\themes\woodmart\inc\admin\assets\images\calend-d.svg" />
+    <Content Include="wp-content\themes\woodmart\inc\admin\assets\images\calend-l.svg" />
+    <Content Include="wp-content\themes\woodmart\js\libs\device.minca3f.js" />
+    <Content Include="wp-content\themes\woodmart\js\libs\swiper.minca3f.js" />
+    <Content Include="wp-content\themes\woodmart\js\scripts\global\helpers.minca3f.js" />
+    <Content Include="wp-content\themes\woodmart\js\scripts\global\scrollBar.minca3f.js" />
+    <Content Include="wp-content\themes\woodmart\js\scripts\global\scrollTop.minca3f.js" />
+    <Content Include="wp-content\themes\woodmart\js\scripts\global\swiperInit.minca3f.js" />
+    <Content Include="wp-content\themes\woodmart\js\scripts\global\widgetCollapse.minca3f.js" />
+    <Content Include="wp-content\themes\woodmart\js\scripts\header\headerBuilder.minca3f.js" />
+    <Content Include="wp-content\themes\woodmart\js\scripts\menu\menuOffsets.minca3f.js" />
+    <Content Include="wp-content\themes\woodmart\js\scripts\menu\menuSetUp.minca3f.js" />
+    <Content Include="wp-content\themes\woodmart\js\scripts\menu\mobileNavigation.minca3f.js" />
+    <Content Include="wp-content\themes\woodmart\js\scripts\wc\updateCartFragmentsFixca3f.js" />
+    <Content Include="wp-content\themes\woodmart\js\scripts\wc\woocommerceNotices.minca3f.js" />
+    <Content Include="wp-content\uploads\2024\08\9.png" />
+    <Content Include="wp-content\uploads\2024\08\appointment-icon.png" />
+    <Content Include="wp-content\uploads\2024\08\bannerfddb.png" />
+    <Content Include="wp-content\uploads\2024\08\Frame-6.png" />
+    <Content Include="wp-content\uploads\2024\08\Frame-7.png" />
+    <Content Include="wp-content\uploads\2024\08\Frame-8.png" />
+    <Content Include="wp-content\uploads\2024\08\Group-1000001819.png" />
+    <Content Include="wp-content\uploads\2024\08\Group-1000001994-150x150.png" />
+    <Content Include="wp-content\uploads\2024\08\Group-1000001994-300x300.png" />
+    <Content Include="wp-content\uploads\2024\08\Group-246.png" />
+    <Content Include="wp-content\uploads\2024\08\Icon-1.png" />
+    <Content Include="wp-content\uploads\2024\08\Icons1.png" />
+    <Content Include="wp-content\uploads\2024\08\Icons2.png" />
+    <Content Include="wp-content\uploads\2024\08\Icons3.png" />
+    <Content Include="wp-content\uploads\2024\08\info1.png" />
+    <Content Include="wp-content\uploads\2024\08\info2.png" />
+    <Content Include="wp-content\uploads\2024\08\info3.png" />
+    <Content Include="wp-content\uploads\2024\08\location.png" />
+    <Content Include="wp-content\uploads\2024\08\logo-footer.png" />
+    <Content Include="wp-content\uploads\2024\08\Logo-head.png" />
+    <Content Include="wp-content\uploads\2024\08\Mask-group-1.png" />
+    <Content Include="wp-content\uploads\2024\08\Mask-group-11e35.png" />
+    <Content Include="wp-content\uploads\2024\08\Mask-group-2.png" />
+    <Content Include="wp-content\uploads\2024\08\Mask-group.png" />
+    <Content Include="wp-content\uploads\2024\08\Phone-Number.png" />
+    <Content Include="wp-content\uploads\2024\08\sec-3.png" />
+    <Content Include="wp-content\uploads\2024\08\sec-5.png" />
+    <Content Include="wp-content\uploads\2024\08\Shape.png" />
+    <Content Include="wp-content\uploads\2024\08\Vector.png" />
+    <Content Include="wp-content\uploads\2024\08\zoomicon.png" />
+    <Content Include="wp-content\uploads\2024\08\.png" />
+    <Content Include="wp-content\uploads\2024\09\Mask-group-3.png" />
+    <Content Include="wp-content\uploads\2024\09\Mask-group-4.png" />
+    <Content Include="wp-content\uploads\2024\09\Mask-group-5.png" />
+    <Content Include="wp-content\uploads\2024\09\Mask-group-6.png" />
+    <Content Include="wp-content\uploads\2024\09\Mask-group-7.png" />
+    <Content Include="wp-content\uploads\2024\10\Mask-group-6.png" />
+    <Content Include="wp-content\uploads\2024\10\Mask-group-7.png" />
+    <Content Include="wp-content\uploads\2024\10\Mask-group-8.png" />
+    <Content Include="wp-content\uploads\2024\12\xts-default_header-1734477809ca3f.css" />
+    <Content Include="wp-includes\css\dist\block-library\style.min9704.css" />
+    <Content Include="wp-includes\js\dist\hooks.min4fdd.js" />
+    <Content Include="wp-includes\js\dist\i18n.minc33c.js" />
+    <Content Include="wp-includes\js\imagesloaded.minbb93.js" />
+    <Content Include="wp-includes\js\jquery\jquery-migrate.min5589.js" />
+    <Content Include="wp-includes\js\jquery\jquery.minf43b.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="wp-content\plugins\js_composer\assets\fonts\vc_grid\vc_grid_v157a1.eot" />
+    <Content Include="wp-content\plugins\js_composer\assets\fonts\vc_grid\vc_grid_v157a1.ttf" />
+    <Content Include="wp-content\plugins\js_composer\assets\fonts\vc_grid\vc_grid_v157a1.woff" />
+    <Content Include="wp-content\plugins\js_composer\assets\fonts\vc_grid\vc_grid_v1d41d.eot" />
+    <Content Include="wp-content\plugins\js_composer\assets\fonts\vc_icons_v3\fonts\vcpb-plugin-iconscd4b.eot" />
+    <Content Include="wp-content\plugins\js_composer\assets\fonts\vc_icons_v3\fonts\vcpb-plugin-iconscd4b.ttf" />
+    <Content Include="wp-content\plugins\js_composer\assets\fonts\vc_icons_v3\fonts\vcpb-plugin-iconscd4b.woff" />
+    <Content Include="wp-content\plugins\woocommerce\assets\fonts\cardo_normal_400.woff2" />
+    <Content Include="wp-content\plugins\woocommerce\assets\fonts\Inter-VariableFont_slnt,wght.woff2" />
+    <Content Include="wp-content\themes\woodmart\fonts\test_woodmart-font-1-400761c.woff2" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Programs.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="wp-content\themes\woodmart\fonts\woodmart-font-1-400761c.woff2" />
+    <Content Include="Views\Home\Business_Coaching.cshtml" />
+    <Content Include="Views\Home\Life_Coaching.cshtml" />
+    <Content Include="Views\Home\Personal_Growth.cshtml" />
+    <Content Include="souces\dist\fonts\.DS_Store" />
+    <Content Include="souces\dist\fonts\roboto\Roboto-Black.ttf" />
+    <Content Include="souces\dist\fonts\roboto\Roboto-BlackItalic.ttf" />
+    <Content Include="souces\dist\fonts\roboto\Roboto-Bold.ttf" />
+    <Content Include="souces\dist\fonts\roboto\Roboto-BoldItalic.ttf" />
+    <Content Include="souces\dist\fonts\roboto\Roboto-Italic.ttf" />
+    <Content Include="souces\dist\fonts\roboto\Roboto-Light.ttf" />
+    <Content Include="souces\dist\fonts\roboto\Roboto-LightItalic.ttf" />
+    <Content Include="souces\dist\fonts\roboto\Roboto-Medium.ttf" />
+    <Content Include="souces\dist\fonts\roboto\Roboto-MediumItalic.ttf" />
+    <Content Include="souces\dist\fonts\roboto\Roboto-Regular.ttf" />
+    <Content Include="souces\dist\fonts\roboto\Roboto-Thin.ttf" />
+    <Content Include="souces\dist\fonts\roboto\Roboto-ThinItalic.ttf" />
+    <Content Include="souces\dist\fonts\summernote\summernote.woff" />
+    <Content Include="souces\dist\images\.DS_Store" />
+    <Content Include="souces\dist\images\placeholders\.DS_Store" />
+    <Content Include="souces\dist\json\location.json" />
+    <Content Include="souces\src\fonts\.DS_Store" />
+    <Content Include="souces\src\fonts\roboto\Roboto-Black.ttf" />
+    <Content Include="souces\src\fonts\roboto\Roboto-BlackItalic.ttf" />
+    <Content Include="souces\src\fonts\roboto\Roboto-Bold.ttf" />
+    <Content Include="souces\src\fonts\roboto\Roboto-BoldItalic.ttf" />
+    <Content Include="souces\src\fonts\roboto\Roboto-Italic.ttf" />
+    <Content Include="souces\src\fonts\roboto\Roboto-Light.ttf" />
+    <Content Include="souces\src\fonts\roboto\Roboto-LightItalic.ttf" />
+    <Content Include="souces\src\fonts\roboto\Roboto-Medium.ttf" />
+    <Content Include="souces\src\fonts\roboto\Roboto-MediumItalic.ttf" />
+    <Content Include="souces\src\fonts\roboto\Roboto-Regular.ttf" />
+    <Content Include="souces\src\fonts\roboto\Roboto-Thin.ttf" />
+    <Content Include="souces\src\fonts\roboto\Roboto-ThinItalic.ttf" />
+    <Content Include="souces\src\images\.DS_Store" />
+    <Content Include="souces\src\images\placeholders\.DS_Store" />
+    <Content Include="souces\src\json\location.json" />
+    <Content Include="souces\src\js\.DS_Store" />
+    <Content Include="souces\src\sass\.DS_Store" />
+    <Content Include="souces\src\sass\app.scss" />
+    <Content Include="souces\src\sass\fonts\_roboto.scss" />
+    <Content Include="souces\src\sass\_accordion.scss" />
+    <Content Include="souces\src\sass\_app.scss" />
+    <Content Include="souces\src\sass\_blog.scss" />
+    <Content Include="souces\src\sass\_box.scss" />
+    <Content Include="souces\src\sass\_boxed-tabs.scss" />
+    <Content Include="souces\src\sass\_breadcrumb.scss" />
+    <Content Include="souces\src\sass\_breakpoint.scss" />
+    <Content Include="souces\src\sass\_button.scss" />
+    <Content Include="souces\src\sass\_chat-dropdown.scss" />
+    <Content Include="souces\src\sass\_chat.scss" />
+    <Content Include="souces\src\sass\_checkbox.scss" />
+    <Content Include="souces\src\sass\_content.scss" />
+    <Content Include="souces\src\sass\_datatable-wrapper.scss" />
+    <Content Include="souces\src\sass\_datepicker.scss" />
+    <Content Include="souces\src\sass\_dropdown.scss" />
+    <Content Include="souces\src\sass\_error-page.scss" />
+    <Content Include="souces\src\sass\_file.scss" />
+    <Content Include="souces\src\sass\_global.scss" />
+    <Content Include="souces\src\sass\_image-fit.scss" />
+    <Content Include="souces\src\sass\_inbox-filter.scss" />
+    <Content Include="souces\src\sass\_inbox.scss" />
+    <Content Include="souces\src\sass\_input.scss" />
+    <Content Include="souces\src\sass\_intro.scss" />
+    <Content Include="souces\src\sass\_jquery-validation.scss" />
+    <Content Include="souces\src\sass\_login.scss" />
+    <Content Include="souces\src\sass\_mini-chat-box.scss" />
+    <Content Include="souces\src\sass\_mini-chat-list.scss" />
+    <Content Include="souces\src\sass\_mini-chat.scss" />
+    <Content Include="souces\src\sass\_mini-report-chart.scss" />
+    <Content Include="souces\src\sass\_mobile-menu.scss" />
+    <Content Include="souces\src\sass\_modal.scss" />
+    <Content Include="souces\src\sass\_news.scss" />
+    <Content Include="souces\src\sass\_notification-content.scss" />
+    <Content Include="souces\src\sass\_notification.scss" />
+    <Content Include="souces\src\sass\_pagination.scss" />
+    <Content Include="souces\src\sass\_pos-dropdown.scss" />
+    <Content Include="souces\src\sass\_pos.scss" />
+    <Content Include="souces\src\sass\_post.scss" />
+    <Content Include="souces\src\sass\_pricing-tabs.scss" />
+    <Content Include="souces\src\sass\_report-box.scss" />
+    <Content Include="souces\src\sass\_report-chart.scss" />
+    <Content Include="souces\src\sass\_report-maps.scss" />
+    <Content Include="souces\src\sass\_report-timeline.scss" />
+    <Content Include="souces\src\sass\_scrollbar.scss" />
+    <Content Include="souces\src\sass\_search-result.scss" />
+    <Content Include="souces\src\sass\_search.scss" />
+    <Content Include="souces\src\sass\_select2.scss" />
+    <Content Include="souces\src\sass\_side-nav.scss" />
+    <Content Include="souces\src\sass\_slick.scss" />
+    <Content Include="souces\src\sass\_summernote.scss" />
+    <Content Include="souces\src\sass\_tab.scss" />
+    <Content Include="souces\src\sass\_table-report.scss" />
+    <Content Include="souces\src\sass\_table.scss" />
+    <Content Include="souces\src\sass\_tailwind.scss" />
+    <Content Include="souces\src\sass\_toast.scss" />
+    <Content Include="souces\src\sass\_tooltip.scss" />
+    <Content Include="souces\src\sass\_top-bar-boxed.scss" />
+    <Content Include="souces\src\sass\_top-bar.scss" />
+    <Content Include="souces\src\sass\_top-nav.scss" />
+    <Content Include="souces\src\sass\_typing-dots.scss" />
+    <Content Include="souces\src\sass\_wizard.scss" />
+    <Content Include="souces\src\sass\_zoom-in.scss" />
+    <Content Include="Views\Shared\_UserAccounts.cshtml" />
+    <Content Include="Views\UserAccounts\Index.cshtml" />
+    <Content Include="Views\Shared\_Dashboard.cshtml" />
+    <Content Include="Views\UserAccounts\Dashboard.cshtml" />
+    <Content Include="Views\UserAccounts\AppContactList.cshtml" />
+    <Content Include="Views\Home\ZoomMeeting.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53444</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44373/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>https://localhost:44373/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

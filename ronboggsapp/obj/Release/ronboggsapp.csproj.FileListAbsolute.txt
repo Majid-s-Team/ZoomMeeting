@@ -1,0 +1,254 @@
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\ronboggsapp.dll.config
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\ronboggsapp.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\ronboggsapp.pdb
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\csc.exe
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\csc.exe.config
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\csc.rsp
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\csi.exe
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\csi.exe.config
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\csi.rsp
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.Managed.Core.targets
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.AppContext.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Collections.Immutable.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Console.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Globalization.Calendars.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.IO.Compression.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.IO.FileSystem.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Net.Http.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Net.Sockets.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Reflection.Metadata.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.ValueTuple.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Xml.XmlDocument.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Xml.XPath.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\vbc.exe
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\vbc.exe.config
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\vbc.rsp
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\VBCSCompiler.exe
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\roslyn\VBCSCompiler.exe.config
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\Antlr3.Runtime.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\BouncyCastle.Cryptography.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\MailKit.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\Microsoft.Web.Infrastructure.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\MimeKit.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\Newtonsoft.Json.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Buffers.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Formats.Asn1.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Memory.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Net.Http.Formatting.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Numerics.Vectors.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Threading.Tasks.Extensions.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.ValueTuple.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.Helpers.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.Http.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.Http.WebHost.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.Mvc.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.Optimization.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.Razor.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.WebPages.Deployment.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.WebPages.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.WebPages.Razor.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\WebGrease.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\BouncyCastle.Cryptography.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\MailKit.pdb
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\MailKit.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\MailKit.dll.config
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\MimeKit.pdb
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\MimeKit.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Buffers.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Formats.Asn1.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Memory.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Numerics.Vectors.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Threading.Tasks.Extensions.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.ValueTuple.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.Helpers.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.Mvc.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.Optimization.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.Razor.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.WebPages.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.WebPages.Deployment.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.WebPages.Razor.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\Newtonsoft.Json.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\Antlr3.Runtime.pdb
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Net.Http.Formatting.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.Http.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\System.Web.Http.WebHost.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\obj\Release\ronboggsapp.csproj.AssemblyReference.cache
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\obj\Release\ronboggsapp.csproj.CoreCompileInputs.cache
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\obj\Release\ronboggs.670EAC27.Up2Date
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\obj\Release\ronboggsapp.dll
+D:\MQH\2025-01-13\ronboggsapp\ronboggsapp\obj\Release\ronboggsapp.pdb
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\ronboggsapp.dll.config
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\ronboggsapp.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\ronboggsapp.pdb
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\csc.exe
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\csc.exe.config
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\csc.rsp
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\csi.exe
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\csi.exe.config
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\csi.rsp
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.Managed.Core.targets
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.AppContext.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Collections.Immutable.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Console.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Globalization.Calendars.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.IO.Compression.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.IO.FileSystem.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Net.Http.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Net.Sockets.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Reflection.Metadata.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.ValueTuple.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Xml.XmlDocument.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Xml.XPath.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\vbc.exe
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\vbc.exe.config
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\vbc.rsp
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\VBCSCompiler.exe
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\roslyn\VBCSCompiler.exe.config
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Antlr3.Runtime.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\BouncyCastle.Cryptography.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Google.Protobuf.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\K4os.Compression.LZ4.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\K4os.Compression.LZ4.Streams.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\K4os.Hash.xxHash.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.Extensions.Caching.Abstractions.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.Extensions.Caching.Memory.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.Extensions.Options.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.Extensions.Primitives.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.Web.Infrastructure.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\MimeKit.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\MySql.Data.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Newtonsoft.Json.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\RestSharp.Authenticators.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\RestSharp.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Buffers.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.ComponentModel.Annotations.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Configuration.ConfigurationManager.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Diagnostics.DiagnosticSource.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Formats.Asn1.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.IO.Pipelines.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Memory.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Net.Http.Formatting.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Numerics.Vectors.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Security.Cryptography.Pkcs.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Text.Encodings.Web.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Text.Json.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Threading.Tasks.Extensions.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.ValueTuple.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.Helpers.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.Http.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.Http.WebHost.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.Mvc.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.Optimization.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.Razor.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.WebPages.Deployment.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.WebPages.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.WebPages.Razor.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\WebGrease.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\ZstdSharp.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\BouncyCastle.Cryptography.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Google.Protobuf.pdb
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Google.Protobuf.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\K4os.Compression.LZ4.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\K4os.Compression.LZ4.Streams.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\K4os.Hash.xxHash.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.Extensions.Caching.Abstractions.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.Extensions.Caching.Memory.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.Extensions.Options.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.Extensions.Primitives.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\MimeKit.pdb
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\MimeKit.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\MySql.Data.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\RestSharp.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Buffers.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Configuration.ConfigurationManager.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Diagnostics.DiagnosticSource.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Formats.Asn1.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.IO.Pipelines.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Memory.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Numerics.Vectors.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Security.Cryptography.Pkcs.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Text.Encodings.Web.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Text.Json.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Threading.Tasks.Extensions.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.ValueTuple.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.Helpers.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.Mvc.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.Optimization.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.Razor.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.WebPages.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.WebPages.Deployment.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.WebPages.Razor.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Newtonsoft.Json.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Antlr3.Runtime.pdb
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Net.Http.Formatting.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.Http.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\System.Web.Http.WebHost.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\obj\Release\ronboggsapp.csproj.AssemblyReference.cache
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\obj\Release\ronboggsapp.csproj.CoreCompileInputs.cache
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\obj\Release\ronboggs.670EAC27.Up2Date
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\obj\Release\ronboggsapp.dll
+D:\MQH\Noman Bhai\ronboggsapp\ronboggsapp\obj\Release\ronboggsapp.pdb

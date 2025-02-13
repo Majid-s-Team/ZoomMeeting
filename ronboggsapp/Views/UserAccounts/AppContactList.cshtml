@@ -1,0 +1,68 @@
+﻿@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+    ViewBag.title = "Dashboard - Contact";
+    System.Data.DataTable ContactList = ViewBag.ContactList;
+}
+<div class="grid grid-cols-12 gap-6">
+    <div class="col-span-12 xxl:col-span-12 grid grid-cols-12 gap-6">
+        <!-- BEGIN: General Report -->
+        <div class="col-span-12 mt-8">
+            <div class="intro-y flex items-center h-10">
+                <h2 class="text-lg font-medium truncate mr-5">
+                    General Report
+                </h2>
+                <a href="" class="ml-auto flex text-theme-1"> <i data-feather="refresh-ccw" class="w-4 h-4 mr-3"></i> Reload Data </a>
+            </div>
+        </div>
+        <!-- BEGIN: List of Appointments -->
+        <div class="col-span-12 mt-6">
+            <div class="intro-y block sm:flex items-center h-10">
+                <h2 class="text-lg font-medium truncate mr-5">
+                    List of Appointments
+                </h2>
+                <div class="flex items-center sm:ml-auto mt-3 sm:mt-0">
+                    <button class="button box flex items-center text-gray-700"> <i data-feather="file-text" class="hidden sm:block w-4 h-4 mr-2"></i> Export to Excel </button>
+                    <button class="ml-3 button box flex items-center text-gray-700"> <i data-feather="file-text" class="hidden sm:block w-4 h-4 mr-2"></i> Export to PDF </button>
+                </div>
+            </div>
+            <div class="intro-y overflow-auto lg:overflow-visible mt-8 sm:mt-0">
+                <table style="width:100%" class="table table-responsive vtable-border" border="1">
+                    <tr style="background-color:darkblue; color:white">
+                        <td></td>
+                        <td>Sno</td>
+                        <td>From</td>
+                        <td>Body</td>
+                        <td>Date</td>
+                    </tr>
+                    @{
+                        int index = 0;
+                        int Row = 1;
+                        while (index < ContactList.Rows.Count)
+                        {
+                            <tr style="color:black">
+                                <td>
+                                    <div class="flex justify-center items-center">
+                                        <a class="flex items-center text-theme-6" href="@Url.Action("CONTACT_Delete","UserAccounts",new { id = @ContactList.Rows[index]["cid"].ToString() })"> <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                    </div>
+                                </td>
+                                <td style="width:2%">@Row</td>
+                                <td style="width:20%">
+                                    N: @ContactList.Rows[index]["FullName"].ToString()<br />
+                                    E: @ContactList.Rows[index]["From"].ToString()<br />
+                                    P: @ContactList.Rows[index]["Phone"].ToString()
+                                </td>
+                                <td style="width:80%">
+                                    @ContactList.Rows[index]["Message"].ToString()
+                                </td>
+                                <td style="width:8%">
+                                    @ContactList.Rows[index]["Email_Date_Time"].ToString()
+                                </td>
+                            </tr>
+                            index++;
+                            Row++;
+                        }
+                    }
+                </table>
+            </div>
+        </div>
+    </div>

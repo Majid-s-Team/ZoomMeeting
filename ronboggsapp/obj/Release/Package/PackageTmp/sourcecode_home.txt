@@ -1,0 +1,139 @@
+using Org.BouncyCastle.Cms;
+using ronboggsapp.Models;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Net;
+using System.Net.Mail;
+using System.Reflection;
+using System.Web;
+using System.Web.Mvc;
+
+namespace ronboggsapp.Controllers
+{
+    public class HomeController : Controller
+    {
+        public ActionResult Index()
+        {
+
+            string smtpServer = SMTP_PROTOCOL.smtpServer;     // Replace with your SMTP server
+            string smtpUsername = SMTP_PROTOCOL.smtpUsername;   // Your SMTP username
+            string smtpPassword = SMTP_PROTOCOL.smtpPassword;   // Your SMTP password
+            int smtpport = SMTP_PROTOCOL.smtpPort;       // Use 25, 465, or 587 depending on your SMTP provider
+
+            string To = "hassan.alihabb@gmail.com";
+
+
+            // 
+
+
+            // Process 1 
+            //EmailService.SendEmailAsync().GetAwaiter();
+            // Process 2 
+            //UserEmailOptions userEmailOptions = new UserEmailOptions()
+            //{
+            //    Body = "This is sample body",
+            //    Subject = "This is sample test",
+            //    ToEmails = new List<string>() { "nitish.webgentle@gmail.com" }
+            //};
+
+            //var result = EmailService.SendEmail(userEmailOptions);
+            //string op = result.Content.ToString();
+            // Process 3 
+            EmailService.SendSimpleMessage();
+
+
+            //EmailService.SendEmail(userEmailOptions);
+            //var response = MailgunEmailSender.SendEmail();
+            //if (response?.IsSuccessful == true)
+            //{
+            //    Console.WriteLine("Email sent successfully!");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Failed to send email.");
+            //}
+
+            // Process 2
+            /*SmtpClient client = new SmtpClient();
+            client.Host = SMTP_PROTOCOL.smtpServer;
+            client.Port = Convert.ToInt32(SMTP_PROTOCOL.smtpPort);
+            client.UseDefaultCredentials = false; // This require to be before setting Credentials property
+            client.DeliveryMethod = SmtpDeliveryMethod.Network;
+            client.Credentials = new NetworkCredential(smtpUsername, smtpPassword); // you must give a full email address for authentication 
+            client.EnableSsl = true; // Set to avoid secure connection exception
+            MailMessage message = new MailMessage();
+            message.From = new MailAddress("hassan.alihabb@gmail.com"); // sender must be a full email address
+            message.Subject = "Subject";
+            message.IsBodyHtml = true;
+            message.Body = "<h1>Hello World</h1>";
+            message.BodyEncoding = System.Text.Encoding.UTF8;
+            message.SubjectEncoding = System.Text.Encoding.UTF8;
+            message.To.Add(new MailAddress(To));
+            try
+            {
+                client.Send(message);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }*/
+            Session["CurrentPage"] = "Home";
+            return View();
+        }
+        public ActionResult About()
+        {
+            Session["CurrentPage"] = "About";
+            ViewBag.Message = "About";
+
+            return View();
+        }
+        public ActionResult programs()
+        {
+            Session["CurrentPage"] = "Programs";
+            ViewBag.Message = "Program";
+
+            return View();
+        }
+        public ActionResult Contact()
+        {
+            Session["CurrentPage"] = "Contact";
+            ViewBag.Message = "contact";
+
+            return View();
+        }
+        public ActionResult Life_Coaching()
+        {
+            Session["CurrentPage"] = "Home";
+            ViewBag.Message = "Life_Coaching";
+
+            return View();
+        }
+        public ActionResult Personal_Growth()
+        {
+            Session["CurrentPage"] = "Home";
+            ViewBag.Message = "Personal_Growth";
+
+            return View();
+        }
+        public ActionResult Business_Coaching()
+        {
+            Session["CurrentPage"] = "Home";
+            ViewBag.Message = "Business Coaching";
+
+            return View();
+        }
+        //[HttpPost]
+        //public JsonResult SendEmail(string toEmail, string subject, string body)
+        //{
+        //    var emailService = new EmailService();
+        //    bool isSent = emailService.SendEmail(toEmail, subject, body);
+        //    if (isSent == true)
+        //    {
+        //        //return "Thanks for contacting us! We will be in touch with you shortly.";
+        //    }
+        //    return Json(new { success = isSent }, JsonRequestBehavior.AllowGet);
+        //}
+    }
+}
