@@ -1,0 +1,153 @@
+﻿@{
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+    ViewBag.title = "Dashboard - Appointment";
+
+
+    System.Data.DataTable dtAppointment = ViewBag.AppointmentList;
+    System.Data.DataTable dtContact = ViewBag.ContactList;
+}
+<div class="grid grid-cols-12 gap-6">
+    <div class="col-span-12 xxl:col-span-12 grid grid-cols-12 gap-6">
+        <!-- BEGIN: General Report -->
+        <div class="col-span-12 mt-8">
+            <div class="intro-y flex items-center h-10">
+                <h2 class="text-lg font-medium truncate mr-5">
+                    General Report
+                </h2>
+                <a href="" class="ml-auto flex text-theme-1"> <i data-feather="refresh-ccw" class="w-4 h-4 mr-3"></i> Reload Data </a>
+            </div>
+        </div>
+        <!-- END: General Report -->
+        <!-- BEGIN: General Report -->
+        <div class="col-span-12 grid grid-cols-12 gap-6 mt-8">
+            <div class="col-span-12 sm:col-span-6 xxl:col-span-3 intro-y">
+                <div class="mini-report-chart box p-5 zoom-in">
+                    <div class="flex items-center">
+                        <div class="w-2/4 flex-none">
+                            <div class="text-lg font-medium truncate">Appointments</div>
+                            <div class="text-gray-600 mt-1">Total @dtAppointment.Rows.Count</div>
+                        </div>
+                        <div class="flex-none ml-auto relative">
+                            <canvas id="report-donut-chart-1" width="90" height="90"></canvas>
+                            <div class="font-medium absolute w-full h-full flex items-center justify-center top-0 left-0">@dtAppointment.Rows.Count%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 sm:col-span-6 xxl:col-span-3 intro-y">
+                <div class="mini-report-chart box p-5 zoom-in">
+                    <div class="flex items-center">
+                        <div class="w-2/4 flex-none">
+                            <div class="text-lg font-medium truncate">Contacted</div>
+                            <div class="text-gray-600 mt-1">Total @dtContact.Rows.Count </div>
+                        </div>
+                        <div class="flex-none ml-auto relative">
+                            <canvas id="report-donut-chart-2" width="90" height="90"></canvas>
+                            <div class="font-medium absolute w-full h-full flex items-center justify-center top-0 left-0">@dtAppointment.Rows.Count%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: General Report -->
+        <!-- BEGIN: List of Appointments -->
+        <div class="col-span-12 mt-6">
+            <div class="intro-y block sm:flex items-center h-10">
+                <h2 class="text-lg font-medium truncate mr-5">
+                    List of Appointments
+                </h2>
+                <div class="flex items-center sm:ml-auto mt-3 sm:mt-0">
+                    <button class="button box flex items-center text-gray-700" onclick="exportTableToExcel('exampleTable', 'Zoom Meeting List')"> <i data-feather="file-text" class="hidden sm:block w-4 h-4 mr-2"></i> Export to Excel </button>
+                    <button class="ml-3 button box flex items-center text-gray-700"> <i data-feather="file-text" class="hidden sm:block w-4 h-4 mr-2"></i> Export to PDF </button>
+                </div>
+            </div>
+            <div class="intro-y overflow-auto lg:overflow-visible mt-8 sm:mt-0">
+               
+                <table id="exampleTable" class="table" style="padding:0px !important">
+                    <thead>
+                        <tr style="background-color:darkblue; color:white">
+                            <td style="text-align:center">CLIENT ID</td>
+                            <td>CLIENT DETAIL</td>
+                            <td align="center">
+                                APPOINTMENT<br />
+                                DATE & TIME
+                            </td>
+                            <td style="text-align:center">APPOINTMENT LINK</td>
+                            <td style="text-align:center">STATUS</td>
+                            <td style="text-align:center">ACTIONS</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int index = 0;
+                            int Row = 1;
+                            while (index < dtAppointment.Rows.Count)
+                            {
+                                <tr class="intro-x">
+                                    <td class="w-40"  style="text-align:center; width:10%">
+                                        @Row
+                                    </td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-no-wrap">@dtAppointment.Rows[index]["FullName"].ToString()</a>
+                                        <div class="text-gray-600 text-xs whitespace-no-wrap">Phone &amp; @dtAppointment.Rows[index]["Phone"].ToString()</div>
+                                        <div class="text-gray-600 text-xs whitespace-no-wrap">Email &amp; @dtAppointment.Rows[index]["ClientEmail"].ToString()</div>
+                                    </td>
+                                    <td class="text-center" style="text-align:center;">
+                                        @{
+                                            string[] DateExtract = dtAppointment.Rows[index]["ZoomAppointmentDateTime"].ToString().Split(' ');
+                                        }
+                                        @DateExtract[0] @dtAppointment.Rows[index]["ZoomAppointmentDateTime"].ToString().Replace(DateExtract[0],"")
+                                    </td>
+                                    <td class="text-center" style="text-align: center; color: blue !important; font-weight: bold">
+                                        <a class="flex items-center text-theme-4" title="@dtAppointment.Rows[index]["ZoomLink"].ToString()" style="padding-left:30%" href="@dtAppointment.Rows[index]["ZoomLink"].ToString()"> <i data-feather="check-square" class="w-4 h-4 mr-1"></i> Joinning Link </a>
+                                    </td>
+                                    <td class="w-40">
+                                        <div class="flex items-center justify-center text-theme-9"> <i data-feather="check-square" class="w-4 h-4 mr-2"></i> @dtAppointment.Rows[index]["AppointmentType"].ToString() </div>
+                                    </td>
+                                    <td class="table-report__action w-56">
+                                        <div class="flex justify-center items-center">
+                                            <a class="flex items-center text-theme-6" href="@Url.Action("ZOOM_MEETING_Delete","UserAccounts",new { id = @dtAppointment.Rows[index]["zid"].ToString() })"> <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                index++;
+                                Row++;
+                            }
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- END: List of Appointments -->
+    </div>
+</div>
+<script type="text/javascript">
+    function exportTableToExcel(tableID, filename = '') {
+        // Get the table element
+        var table = document.getElementById(tableID);
+        var tableHTML = table.outerHTML.replace(/ /g, '%20'); // Encode spaces
+
+        // Define the data type and file name
+        var dataType = 'application/vnd.ms-excel';
+        filename = filename ? filename + '.xls' : 'excel_data.xls';
+
+        // Create a download link
+        var downloadLink = document.createElement("a");
+        document.body.appendChild(downloadLink);
+
+        // Check for IE/Edge compatibility
+        if (navigator.msSaveOrOpenBlob) {
+            var blob = new Blob(['\ufeff', tableHTML], { type: dataType });
+            navigator.msSaveOrOpenBlob(blob, filename);
+        } else {
+            // For other browsers
+            downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+            downloadLink.download = filename;
+            downloadLink.click();
+        }
+
+        // Remove the download link after triggering the download
+        document.body.removeChild(downloadLink);
+    }
+</script>
